@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/Components/Navbar";
+import HeroSection from "@/Components/HeroSection";
+import FeatureSection from "@/Components/FeatureSection";
+import WhyChooseUs from "@/Components/WhyChooseUs";
+import DestimonialCards from "@/Components/DestimonialCards";
+import UpComingWeb from "@/Components/ui/UpComingWeb";
+import Instractor from "@/Components/Instractor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +22,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        <div className=" flex items-center justify-center relative w-full">
+          <Navbar />
+        </div>
+        <HeroSection />
+        <FeatureSection />
+        <WhyChooseUs />
+        <DestimonialCards />
+        <UpComingWeb />
+        <Instractor />
+
+        {children}
+      </body>
     </html>
   );
 }
