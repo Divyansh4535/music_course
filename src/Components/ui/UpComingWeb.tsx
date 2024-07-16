@@ -39,7 +39,7 @@ const UpComingWeb = () => {
   return (
     <div className="py-12 bg-gray-900 flex flex-col items-center">
       <div className="flex flex-col gap-2 items-center ">
-        <h2 className="uppercase bg-red-100 text-bold text-teal-600 ">
+        <h2 className="uppercase  text-bold text-teal-600 ">
           {" "}
           Featured Webinars
         </h2>

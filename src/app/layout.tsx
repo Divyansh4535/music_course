@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
+        {children}
         <div className=" flex items-center justify-center relative w-full">
           <Navbar />
         </div>
@@ -34,7 +35,6 @@ export default function RootLayout({
         <UpComingWeb />
         <Instractor />
 
-        {children}
       </body>
     </html>
   );
